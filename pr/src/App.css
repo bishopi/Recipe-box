@@ -1,38 +1,144 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background{
+  background-image: url(https://bestfon.ucoz.ru/_ph/23/2/737214789.jpg?1592403326);
+  width: 100%;
+  height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 80%;
+  margin:  auto;
+
+}
+.menuButton {
+  width: 70%;
+  margin: 0 auto 5px;
+  background-color: #F8B195;
+  cursor: pointer;
+  height: 60px;
+  color: black;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px;
+}
+.menuButton:hover {
+  background-color: #C06C84;
+}
+.recipeButton{
+  width: 30%;
+  margin: 0 auto 5px;
+  background-color: #F8B195;
+  cursor: pointer;
+  height: 60px;
+  outline: none;
+  color: black;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px;
+}
+.recipeButton:hover{
+  background-color: #C06C84;
+}
+.viewRecipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:0 10px;
+}
+.Menu {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  overflow: auto;
+
+
+}
+.windowShow {
+  width: 70%;
+  overflow: auto;
+  background-color:rgba(255,255,255,0.4);
+  border-radius: 30px;
+  border: 1px black solid;
+}
+.AddForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  height: 60%;
+  margin: auto ;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  border-radius: 30px;
+  border: 1px black solid;
 }
+.header {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 50px;
+  margin: 20px;
+  text-align: center;
+}
+.recipeTitle {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 25px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  margin: 10px;
+}
+.recipeDes {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+textarea {
+  width: 90%;
+  height: 100px;
+  resize: none;
+  margin: 0 auto 5px;
+  outline: none;
+}
+input {
+  width: 90%;
+  outline: none;
+  margin: auto;
+}
+.headerMain {
+  margin: 0 auto ;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+.error{
+  color: #8D021F;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.recipeButtons {
+  margin-top: 10px;
+  display: flex;
+
+}
+.recipeList {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 40px;
 }
