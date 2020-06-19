@@ -20,7 +20,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(Actions['RECIPES/FETCH_LOAD_DATA']());
+    dispatch(Actions['RECIPES/LOAD_DATA']());
   }, [dispatch]);
 
   return (
@@ -61,7 +61,7 @@ function App() {
 }
 const mapDispatchToProps = dispatch => {
   return {
-    load: () => dispatch(Actions['RECIPES/FETCH_LOAD_DATA']())
+    load: () => dispatch(Actions['RECIPES/LOAD_DATA']())
   }
 
 };

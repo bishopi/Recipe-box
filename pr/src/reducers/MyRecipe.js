@@ -23,7 +23,7 @@ const initialState = {
 
 const recipeReducer = handleActions({
 
-        [Actions['RECIPES/FETCH_RECIPES_ADD_SUCCESSFULLY']]: (state, action) => {
+        [Actions['RECIPES/RECIPES_ADDED_SUCCESSFULLY']]: (state, action) => {
             counter++;
             return update(state, {
                 recipeList: {
@@ -37,7 +37,7 @@ const recipeReducer = handleActions({
 
             }, console.log(initialState));
         },
-        [Actions['RECIPES/FETCH_RECIPE_REMOVE']]: (state, action) => {
+        [Actions['RECIPES/RECIPE_REMOVE']]: (state, action) => {
             const fromState = state.recipeList.slice();
             let indexRemove;
             fromState.forEach((recipe, index) => {
@@ -53,7 +53,7 @@ const recipeReducer = handleActions({
                 }
             )
         },
-        [Actions['RECIPES/FETCH_RECIPES_REMOVE_ALL']]: (state) => {
+        [Actions['RECIPES/RECIPES_REMOVE_ALL']]: (state) => {
             const remove = [];
             return update(
                 state, {
@@ -61,7 +61,7 @@ const recipeReducer = handleActions({
                 }
             )
         },
-        [Actions['RECIPES/FETCH_RECIPE_EDIT']]: (state, action) => {
+        [Actions['RECIPES/RECIPE_EDIT']]: (state, action) => {
             const fromState = state.recipeList.slice();
             let indexEdit;
             fromState.forEach((recipe, index) => {
@@ -78,7 +78,7 @@ const recipeReducer = handleActions({
                 }
             )
         },
-        [Actions['RECIPES/FETCH_SET_RECIPES']]: (state, action) => {
+        [Actions['RECIPES/SET_RECIPES']]: (state, action) => {
             const recipes = action.payload;
             return update(
                 state, {

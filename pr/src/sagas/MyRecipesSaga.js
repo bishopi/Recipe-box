@@ -13,7 +13,7 @@ function* loadFromLocal() {
     }
 
     yield put({
-        type: "RECIPES/FETCH_SET_RECIPES",
+        type: "RECIPES/SET_RECIPES",
         payload: new_data,
     });
 }
@@ -27,9 +27,9 @@ function* saveToLocal() {
 }
 
 export function* sagaWatcher() {
-    yield takeEvery(Actions["RECIPES/FETCH_LOAD_DATA"], loadFromLocal);
-    yield takeEvery(Actions["RECIPES/FETCH_RECIPES_ADD_SUCCESSFULLY"], saveToLocal);
-    yield takeEvery(Actions["RECIPES/FETCH_RECIPES_REMOVE_ALL"], saveToLocal);
-    yield takeEvery(Actions["RECIPES/FETCH_RECIPE_EDIT"], saveToLocal);
-    yield takeEvery(Actions["RECIPES/FETCH_RECIPE_REMOVE"], saveToLocal);
+    yield takeEvery(Actions["RECIPES/LOAD_DATA"], loadFromLocal);
+    yield takeEvery(Actions["RECIPES/RECIPES_ADDED_SUCCESSFULLY"], saveToLocal);
+    yield takeEvery(Actions["RECIPES/RECIPES_REMOVE_ALL"], saveToLocal);
+    yield takeEvery(Actions["RECIPES/RECIPE_EDIT"], saveToLocal);
+    yield takeEvery(Actions["RECIPES/RECIPE_REMOVE"], saveToLocal);
 }

@@ -53,7 +53,7 @@ function RemoveAll({ remove, history, myRecipes }) {
 
 const mapDispatchToProps = dispatch => {
     return {
-        remove: () => dispatch(Actions['RECIPES/FETCH_RECIPES_REMOVE_ALL']())
+        remove: () => dispatch(Actions['RECIPES/RECIPES_REMOVE_ALL']())
     }
 
 };

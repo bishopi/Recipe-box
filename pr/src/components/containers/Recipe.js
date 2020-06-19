@@ -28,8 +28,8 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
     return {
-        recipeRemove: (id) => dispatch(Actions['RECIPES/FETCH_RECIPE_REMOVE'](id)),
-        editRecipe: (params) => dispatch(Actions['RECIPES/FETCH_RECIPE_EDIT'](params))
+        recipeRemove: (id) => dispatch(Actions['RECIPES/RECIPE_REMOVE'](id)),
+        editRecipe: (params) => dispatch(Actions['RECIPES/RECIPE_EDIT'](params))
     }
 };
 

@@ -13,8 +13,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        saveRecipe: (params) => dispatch(Actions["RECIPES/FETCH_RECIPES_ADD_SUCCESSFULLY"](params)),
-        editRecipe: (params) => dispatch(Actions['RECIPES/FETCH_RECIPE_EDIT'](params))
+        saveRecipe: (params) => dispatch(Actions["RECIPES/RECIPES_ADDED_SUCCESSFULLY"](params)),
+        editRecipe: (params) => dispatch(Actions['RECIPES/RECIPE_EDIT'](params))
 
     };
 };
