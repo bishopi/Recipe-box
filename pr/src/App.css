@@ -5,7 +5,7 @@
   height: 100vh;
 }
 .background{
-  background-image: url(https://bestfon.ucoz.ru/_ph/23/2/737214789.jpg?1592403326);
+  background-image: url(https://bipbap.ru/wp-content/uploads/2017/09/1254860046_wallpaper-8.jpg);
   width: 100%;
   height: 100%;
 }
@@ -57,15 +57,17 @@
 .Menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 30%;
   overflow: auto;
+
 
 
 }
 .windowShow {
   width: 70%;
   overflow: auto;
-  background-color:rgba(255,255,255,0.4);
+  background-color:rgba(255,255,255,0.6);
   border-radius: 30px;
   border: 1px black solid;
 }
